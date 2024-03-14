@@ -1,0 +1,41 @@
+lsmod 
+Module                  Size  Used by    Tainted: G  
+simcom_qmi_wwan        28672  0 
+cdc_wdm                24576  1 simcom_qmi_wwan
+usbnet                 45056  1 simcom_qmi_wwan
+mii                    16384  1 usbnet
+techship_serial        40960  0 
+nft_ct                 20480  4 
+nf_conntrack          167936  1 nft_ct
+nf_defrag_ipv6         20480  1 nf_conntrack
+nf_defrag_ipv4         16384  1 nf_conntrack
+nft_limit              16384  4 
+nf_tables_set          32768  7 
+w1_gpio                16384  0 
+wire                   45056  1 w1_gpio
+pwm_fan                16384  0 
+cn                     16384  1 wire
+ti_emif_sram           16384  0 
+ti_am335x_adc          16384  0 
+kfifo_buf              16384  1 ti_am335x_adc
+pwm_tiehrpwm           16384  1 
+c_can_platform         16384  0 
+c_can                  20480  1 c_can_platform
+can_dev                28672  1 c_can
+lm75                   20480  0 
+leds_pca955x           16384  0 
+stpm3x                 32768  0 
+ina2xx                 16384  0 
+ad732x                 16384  0 
+hwmon                  24576  4 wire,pwm_fan,lm75,ina2xx
+phy_am335x             16384  2 
+phy_generic            16384  1 phy_am335x
+omap_wdt               16384  1 
+watchdog               20480  2 omap_wdt
+phy_am335x_control     16384  1 phy_am335x
+ti_am335x_tscadc       16384  1 ti_am335x_adc
+tps65218_pwrbutton     16384  0 
+evdev                  24576  0 
+cpufreq_dt             16384  0 
+leds_gpio              16384  0 
+led_class              16384  2 leds_pca955x,leds_gpio
